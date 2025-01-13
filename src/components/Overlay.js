@@ -19,33 +19,33 @@ export function Overlay({
       </header>
       <footer>
         <p className="footer-text">
-          Created by <a href="https://andersonmancini.dev">Anderson Mancini</a>
+          Created by <a href="#">NAEL</a>
         </p>
         <div className="footer-buttons">
           <button
             onClick={() => setIsPostProcessingEnabled(!isPostProcessingEnabled)}
           >
-            {isPostProcessingEnabled ? "Disable" : "Enable"} Post Processing
+            {isPostProcessingEnabled ? 'Disable' : 'Enable'} Post Processing
           </button>
           <button
             className="toggle"
             onClick={() =>
-              setCurrentScene(currentScene === "vader" ? "royal" : "vader")
+              setCurrentScene(currentScene === 'vader' ? 'royal' : 'vader')
             }
           >
             Toggle Scene
           </button>
           <button
             onClick={() =>
-              setQuality(quality === "default" ? "high" : "default")
+              setQuality(quality === 'default' ? 'high' : 'default')
             }
             className="toggle-quality"
           >
-            {quality === "default" ? "Higher Quality" : "Performance Mode"}
+            {quality === 'default' ? 'Higher Quality' : 'Performance Mode'}
           </button>
         </div>
         <a
-          href="https://github.com/ektogamat/r3f-webgpu-starter"
+          href="https://github.com/nael-awadallah/r3f-webgpu-starter"
           download
           className="download-button"
         >
@@ -53,7 +53,7 @@ export function Overlay({
         </a>
       </footer>
     </div>
-  );
+  )
 }
 
 const SvgIcon = (props) => (
@@ -69,4 +69,4 @@ const SvgIcon = (props) => (
       className="heroicon-ui"
     ></path>
   </svg>
-);
+)
